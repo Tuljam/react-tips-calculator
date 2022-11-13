@@ -16,7 +16,6 @@ const handleValue = (event:ChangeEvent<HTMLInputElement>) =>{
       type={"text"}
       value={value}
       onChange={handleValue}
-
       placeholder={label}
     />
   );

@@ -3,6 +3,7 @@ import { SelectStyled } from "./styles"
 
 interface IProps {
   value:string,
+  onSelect:(value:string) => void;
 
   }
 
@@ -16,7 +17,7 @@ const options:IOption[] = [
   { value: '20%', label: '20%' }
 ]
 
-export const CustomSelect = ({value}:IProps) => {
+export const CustomSelect = ({value,onSelect}:IProps) => {
   return (
     <Select options={options}/>
    

@@ -26,7 +26,7 @@ export const Form = ({children}:IProps) => {
 
   const handleSubmit =(event: FormEvent <HTMLFormElement>) =>{
    event.preventDefault()
-  const totalTips = +bill / +tips;
+  const totalTips = (+bill * +tips)/100;
   const totalBill = +bill + totalTips;
   setTotal(+(totalBill/ +persons).toFixed(2))
   
@@ -37,7 +37,7 @@ export const Form = ({children}:IProps) => {
         {children}
         <Input value = {bill} onChange = {setBill}  label = 'Enter bill'/>
         <Input value = {persons} onChange = {setPersons} label = 'Enter persons'/>
-        <CustomSelect value ={tips} />
+        <CustomSelect value ={tips} onSelect={setTip} />
         <p> Total:{total} $</p>
        <Button isDisabled = {isDisabled} />
        
