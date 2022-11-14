@@ -4,8 +4,6 @@ import { IconStyled } from "./components/Icon/styles";
 import { AppWrapper } from "./appWtapperStyles";
 import { useState } from "react";
 
-
-
 export const App = () => {
   return (
     <AppWrapper>
@@ -15,9 +13,7 @@ export const App = () => {
       <Form>
         <h1>Welcome to App</h1>
         <h6>Let’s go calculate your tip</h6>
-        </Form>
+      </Form>
     </AppWrapper>
   );
 };
-
-

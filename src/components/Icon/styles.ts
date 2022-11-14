@@ -6,6 +6,4 @@ export const IconStyled = styled.svg`
   height: 300px;
   top: 0;
   left: 0;
-
-
 `;
