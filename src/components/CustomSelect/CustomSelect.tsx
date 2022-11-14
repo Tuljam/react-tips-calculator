@@ -1,26 +1,36 @@
-import Select from 'react-select'
-import { SelectStyled } from "./styles"
-
+import Select, {OnChangeValue} from 'react-select'
 interface IProps {
   value:string,
-  onSelect:(value:string) => void;
+  onChangeSelect:(value:string) => void;
+
 
   }
 
 interface IOption{
 value: string,
 label: string,
-}
-const options:IOption[] = [
-  { value: '10%', label: '10%' },
-  { value: '15%', label: '15%' },
-  { value: '20%', label: '20%' }
-]
 
-export const CustomSelect = ({value,onSelect}:IProps) => {
+}
+
+
+export const CustomSelect = ({value,onChangeSelect}:IProps) => {
+const options:IOption[] = [
+  { value: '10', label: '10%'},
+  { value: '15', label: '15%'},
+  { value: '20', label: '20%'}
+];
+ const getOptionValue = (value: string): IOption | undefined => {
+    return value ? options.find((option) => option.value === value) : undefined;
+  };
+
+    const handleSelect = (newValue: OnChangeValue<IOption, boolean>) => {
+    onChangeSelect((newValue as IOption).value);
+  };
+
   return (
-    <Select options={options}/>
+    <Select options={options} value = {getOptionValue(value)} onChange={handleSelect}/>
    
   )
 }
+
 
