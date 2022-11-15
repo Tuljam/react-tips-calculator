@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InputStyled = styled.input`
   border-radius: 50px;
-  width: 456px;
+  /* width: 456px; */
   height: 68px;
   border: none;
   text-align: center;
@@ -21,6 +21,6 @@ export const InputStyled = styled.input`
   }
 
   @media screen and (max-width: 375px) {
-    width: 90%;
+    width: 95%;
   }
 `;

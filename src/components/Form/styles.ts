@@ -1,24 +1,23 @@
 import styled from "styled-components";
 export const FormStyled = styled.form`
+  /* min-width: 55%; */
+  max-width: 370px;
+  width: 95%;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-row-gap: 15px;
-  justify-content: center;
-  align-items: center;
-  background-color: #eaf2f2;
+  gap: 45px;
 
   @media screen and (max-width: 743x) {
-    grid-row-gap: 18px;
+    gap: 40px;
   }
 
   @media screen and (max-width: 425px) {
-    grid-row-gap: 15px;
+    gap: 40px;
   }
   @media screen and (max-width: 375px) {
-    grid-row-gap: 10px;
+    gap: 40px;
   }
 
-  h1 {
+  .form__title {
     font-weight: 400;
     text-align: center;
     font-size: 40px;
@@ -32,7 +31,7 @@ export const FormStyled = styled.form`
     }
   }
 
-  h6 {
+  .form__subtitle  {
     text-align: center;
     font-weight: 400;
     font-size: 32px;
@@ -50,9 +49,10 @@ export const FormStyled = styled.form`
     }
   }
 
-  p {
+  .form__total {
     font-weight: 500;
     font-size: 24px;
     color: #000000;
+    padding: 5px;
   }
 `;

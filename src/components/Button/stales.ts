@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
-  width: 460px;
+  /* width: 460px; */
   height: 60px;
   background: #85d3ca;
   border: none;
@@ -13,7 +13,7 @@ export const ButtonStyled = styled.button`
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     width: 100%;
   }
 
@@ -23,7 +23,7 @@ export const ButtonStyled = styled.button`
 
   @media screen and (max-width: 375px) {
     width: 90%;
-  }
+  } */
 
   &:hover {
     background: #85d3ca;

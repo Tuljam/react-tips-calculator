@@ -1,13 +1,20 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-export const Global = createGlobalStyle`
-*{
-  body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+export const GlobalStyles = createGlobalStyle`
+*{ margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box}
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+ body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1,
 h2,
@@ -21,16 +28,9 @@ p {
   font-weight: normal;
   font-style: normal;
 }
-#root {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
 
 a {
   text-decoration: none;
 }
-}`;
+`;

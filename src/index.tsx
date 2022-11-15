@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { App } from "./App";
 import { Container } from "./containerStyles";
-import { Global } from "./GlobalStyles";
+import { GlobalStyles } from "./GlobalStyles";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -9,9 +9,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <>
-    <Global />
-    <Container>
+    <GlobalStyles />
+    {/* <Container> */}
       <App />
-    </Container>
+    {/* </Container> */}
   </>
 );

@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import circles from './assets/icon/circles.svg'
+
+
 
 export const AppWrapper = styled.div`
-  position: relative;
-  width: 95%;
-  height: 95%;
-  background-color: #eaf2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: no-repeat url(${circles} ) #eaf2f2 top left;
+
 `;
